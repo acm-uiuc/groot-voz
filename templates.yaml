@@ -1,0 +1,3 @@
+group_response: |
+  {{ group }} is meeting next at {{ date | humanize_meeting_time }}
+group_unknown: Sorry, I don't recognize that group.

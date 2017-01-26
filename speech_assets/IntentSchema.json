@@ -1,0 +1,13 @@
+{
+  "intents": [
+    {
+      "intent": "GroupMeetingIntent",
+      "slots": [
+        {
+          "name": "Group",
+          "type": "LIST_OF_GROUPS"
+        }
+      ]
+    }
+  ]
+}

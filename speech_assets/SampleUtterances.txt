@@ -1,0 +1,4 @@
+GroupMeetingIntent when is {Group}
+GroupMeetingIntent when is {Group} meeting next
+GroupMeetingIntent when is the next {Group} meeting
+GroupMeetingIntent when does {Group} meet
