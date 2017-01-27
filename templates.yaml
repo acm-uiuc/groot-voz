@@ -1,3 +1,19 @@
+# GROUPS
 group_meeting_time_response: |
   {{ group }} meets on {{ day }} at {{ time }}
 group_unknown: Sorry, I don't recognize that group.
+
+# EVENTS
+no_events: |
+  There aren't any events happening soon.
+events_intro: |
+  Here are the upcoming ACM events. 
+events_single: |
+  {{ name }} is happening {{ date }}
+
+# MISC
+welcome: |
+  Hello. I am groot voz, ACM's artificial assistant. What would you like to ask me? 
+help: |
+  I can answer a variety of information about ACM. Try asking me about upcoming
+  events, or the meeting time of one of ACM's sigs. What would you like to ask me?

@@ -1,10 +1,16 @@
 from flask import Flask, render_template
-from flask_ask import Ask, statement
-import requests
-from secrets import GROOT_URL, GROOT_ACCESS_TOKEN
+from flask_ask import Ask, statement, question
+from utils import get_group, get_events
 
 app = Flask(__name__)
 ask = Ask(app, '/')
+
+
+@ask.launch
+def launch():
+    welcome_text = render_template('welcome')
+    help_text = render_template('help')
+    return question(welcome_text).reprompt(help_text)
 
 
 @ask.intent('GroupMeetingIntent',
@@ -22,13 +28,34 @@ def meeting_time(group):
     return statement(response)
 
 
-def get_group(group):
-    r = requests.get(GROOT_URL + '/groups/sigs',
-                     headers=dict(Authorization=GROOT_ACCESS_TOKEN))
-    try:
-        return next(i for i in r.json() if i['name'].lower() == group.lower())
-    except:
-        raise ValueError('No group "%s"' % group)
+@ask.intent('UpcomingEventsIntent')
+def upcoming_events():
+    events = get_events()
+    if not events:
+        return statement(render_template('no_events'))
+    response = render_template('events_intro')
+    for event in events:
+        response += render_template('events_single',
+                                    name=event['name'],
+                                    date=event['friendly_date'])
+        response += '. '
+    return statement(response)
+
+
+@ask.intent('AMAZON.HelpIntent')
+def help():
+    help_text = render_template('help')
+    return question(help_text)
+
+
+@ask.intent('AMAZON.StopIntent')
+def stop():
+    return statement("Bye!")
+
+
+@ask.intent('AMAZON.CancelIntent')
+def cancel():
+    return statement("Bye!")
 
 
 if __name__ == '__main__':

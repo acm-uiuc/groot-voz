@@ -2,3 +2,8 @@ GroupMeetingIntent when is {Group}
 GroupMeetingIntent when is {Group} meeting next
 GroupMeetingIntent when is the next {Group} meeting
 GroupMeetingIntent when does {Group} meet
+
+UpcomingEventsIntent what events are coming up
+UpcomingEventsIntent what are the next events
+UpcomingEventsIntent when is the next event
+UpcomingEventsIntent what are the upcoming ACM events
