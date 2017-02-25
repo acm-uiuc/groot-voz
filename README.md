@@ -1,6 +1,14 @@
 # groot-voz
 > 🗣 Alexa, Burn Down the Office
 
+`groot-voz` is the basis for ACM's "office of the future" project. This client allows users to access services of the ACM intranet with a intuitive voice interface using Amazon Alexa.
+
+With `groot-voz` you will be able to...
+
+* Adjust ACM's custom office lighting system
+* Control the music playing in the office
+* Request items from our vending machine
+
 ## Installation
 
 1. Clone the repo.
@@ -33,4 +41,4 @@
 Follow [this](https://developer.amazon.com/blogs/post/Tx14R0IYYGH3SKT/Flask-Ask-A-New-Python-Framework-for-Rapid-Alexa-Skills-Kit-Development) tutorial on setting up the skill. You can find the speech assets necessary for setting up the Alexa Interaction Model in `speech_assets/`.
 
 ## Supported Commands
-See [SampleUtterances](speech_assets/SampleUtterances.txt)
+See [Sample Utterances](speech_assets/SampleUtterances.txt)
