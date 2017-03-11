@@ -1,9 +1,13 @@
 from flask import Flask, render_template
 from flask_ask import Ask, statement, question
 from utils import get_group, get_events
+import os
 
 app = Flask(__name__)
 ask = Ask(app, '/')
+
+PORT = 5652
+DEBUG = os.environ.get('VOZ_DEBUG', False)
 
 
 @ask.launch
@@ -59,4 +63,4 @@ def cancel():
 
 
 if __name__ == '__main__':
-    app.run(debug=True)
+    app.run(port=PORT, debug=DEBUG)
