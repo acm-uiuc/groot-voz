@@ -54,7 +54,7 @@ Follow [this](https://developer.amazon.com/blogs/post/Tx14R0IYYGH3SKT/Flask-Ask-
 See [Sample Utterances](speech_assets/SampleUtterances.txt)
 
 
-##Acknowledgment
+## Acknowledgment
 We are thankful to [Amazon](https://github.com/amzn), especially to the [AWS](https://github.com/aws) team and the [Alexa](https://github.com/alexa) team for supporting this project.
 
 [Amazon](https://www.amazon.com/) is a [proud sponsor](https://acm.illinois.edu/sponsors/sponsors_list) of ACM@UIUC. 
