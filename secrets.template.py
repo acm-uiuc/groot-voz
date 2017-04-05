@@ -1,2 +1,0 @@
-GROOT_URL = ''
-GROOT_ACCESS_TOKEN = ''

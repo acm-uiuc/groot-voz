@@ -1,7 +1,7 @@
 import requests
 import arrow
 from dateutil.parser import parse
-from secrets import GROOT_URL, GROOT_ACCESS_TOKEN
+from settings import GROOT_URL, GROOT_ACCESS_TOKEN
 
 
 def get_group(group):
