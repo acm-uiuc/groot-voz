@@ -1,6 +1,8 @@
 # groot-voz
 > 🗣 Alexa, Burn Down the Office
 
+[![Build Status](https://travis-ci.org/acm-uiuc/groot-voz.svg?branch=master)](https://travis-ci.org/acm-uiuc/groot-voz)
+
 `groot-voz` is the basis for ACM's "office of the future" project. This client allows users to access services of the ACM intranet with a intuitive voice interface using Amazon Alexa.
 
 With `groot-voz` you will be able to...

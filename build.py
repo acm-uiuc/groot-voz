@@ -10,5 +10,6 @@ def make_slot_types():
         with open(SLOT_URL.format(k.upper()), 'w+') as fw:
             fw.write('\n'.join(map(lambda x: x.lower(), data[k])))
 
+
 if __name__ == '__main__':
     make_slot_types()
